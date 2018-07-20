@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
-from player import Player
 from direct.showbase.ShowBase import ShowBase
+from player import Player
 
 class Main(ShowBase):
+    """Main function of the application
+    initialise the engine (ShowBase)"""
+
     def __init__(self):
+        """initialise the engine"""
+        ShowBase.__init__(self)
+        
         # self.player = Player(0, 1)
         
         #

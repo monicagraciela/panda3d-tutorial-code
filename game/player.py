@@ -11,6 +11,7 @@ See License.txt or http://opensource.org/licenses/BSD-2-Clause for more info
 # Panda3D imoprts
 from direct.actor.Actor import Actor
 from direct.fsm.FSM import FSM # 在播放器脚本中使用 FSM 类
+from panda3d.core import KeyboardButton
 
 class Player(FSM): # 让 Player 类继承 FSM 类
     def __init__(self, charId, charNr, controls): # 参数 controls 是一个字符串变量，我们等待 p# 之类的值，其中 # 必须是 1 或 2 ，因为我们只有两个游戏玩家
